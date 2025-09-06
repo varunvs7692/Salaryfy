@@ -11,10 +11,10 @@ export default function Footer({
 }) {
   return (
     <footer
-      className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-2 px-4 w-full shadow-2xl border-t-2 border-blue-700 fixed bottom-0 left-0 z-40 animate-fade-in"
+      className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-2 px-4 w-full shadow-2xl border-t-2 border-blue-700 fixed bottom-0 left-0 z-40 animate-fade-in text-center"
       aria-label="Site Footer"
     >
-      <div className="w-full max-w-5xl mx-auto flex flex-row items-center justify-center gap-4 text-center text-sm font-medium">
+      <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 text-sm font-medium">
         <span className="flex items-center gap-1">
           <svg
             width="18"
@@ -33,21 +33,26 @@ export default function Footer({
           </svg>
           <span className="align-middle">&copy; {year} {company}</span>
         </span>
+
         <span className="hidden sm:inline-block text-gray-400">|</span>
+
         <nav aria-label="Footer Navigation">
-          <ul className="flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-4">
-            {links.map((link) => (
-              <li key={link.label} className="inline">
+          <div className="flex flex-row items-center justify-center gap-2">
+            {links.map((link, idx) => (
+              <React.Fragment key={link.label}>
                 <a
                   href={link.href}
                   title={link.title}
-                  className="hover:underline hover:text-blue-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded px-1"
+                  className="footer-nav-link"
                 >
                   {link.label}
                 </a>
-              </li>
+                {idx < links.length - 1 && (
+                  <span className="text-gray-400">|</span>
+                )}
+              </React.Fragment>
             ))}
-          </ul>
+          </div>
         </nav>
       </div>
     </footer>

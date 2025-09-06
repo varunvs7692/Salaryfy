@@ -1,1 +1,23 @@
-{"name":"Salaryfy","version":"1.0.0","description":"A sample project","main":"index.js","scripts":{"test":"echo \"No tests specified\" && exit 0"},"author":"varunvs7692","license":"ISC"}
+{
+	"name": "salaryfy",
+	"version": "1.0.0",
+	"description": "A sample project",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "echo \"No tests specified\" && exit 0"
+	},
+	"homepage": "https://varunvs7692.github.io/Salaryfy/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/varunvs7692/Salaryfy.git"
+	},
+	"bugs": {
+		"url": "https://github.com/varunvs7692/Salaryfy/issues"
+	},
+	"author": "varunvs7692",
+	"license": "ISC"
+}
