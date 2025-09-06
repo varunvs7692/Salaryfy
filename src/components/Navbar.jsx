@@ -1,9 +1,9 @@
 
+import { Link } from "react-router-dom";
 
-import { useTheme } from "../context/useTheme.js";
 
 export default function Navbar() {
-  const { theme, toggleTheme } = useTheme();
+
   return (
     <nav className="bg-gradient-to-br from-white/80 via-blue-50 to-white/70 backdrop-blur-2xl shadow-2xl border-b-2 border-blue-200 text-blue-900 px-4 sm:px-8 py-6 flex flex-col items-center rounded-b-3xl mb-10 transition-all duration-300 sticky top-0 z-30">
       <div className="flex flex-col items-center w-full max-w-3xl mx-auto">
@@ -31,18 +31,6 @@ export default function Navbar() {
             <NavLinkItem to="/education" label="Financial Education" />
             <NavLinkItem to="/calculator" label="Salary Calculator" />
           </nav>
-          <button
-            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-            onClick={toggleTheme}
-            className="ml-2 px-3 py-2 rounded-full bg-gradient-to-br from-blue-200 to-blue-400 text-blue-900 shadow-md hover:from-blue-300 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all"
-            style={{ minWidth: 44, minHeight: 44 }}
-          >
-            {theme === "dark" ? (
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m8.66-12.66l-.71.71M4.05 19.07l-.71.71m16.97 0l-.71-.71M4.05 4.93l-.71-.71M21 12h-1M4 12H3" stroke="#1e293b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="12" r="5" stroke="#1e293b" strokeWidth="2"/></svg>
-            ) : (
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" stroke="#1e293b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            )}
-          </button>
         </div>
       </div>
     </nav>
