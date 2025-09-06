@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Salaryfy.io – Empowering you with financial clarity, salary breakdowns, tax info, and investment education. Take control of your financial future." />
     <meta name="theme-color" content="#1e3a8a" />
+    <!-- Note: 'theme-color' is not supported by Firefox/Opera; fallback is handled in CSS below -->
     <meta name="msapplication-TileColor" content="#1e3a8a" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <meta property="og:title" content="Salaryfy Financial Clarity & Empowerment" />
   <meta property="og:description" content="Empowering you with financial clarity, salary breakdowns, tax info, and investment education." />
@@ -21,5 +23,39 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <style>
+  body {
+    background: #1e3a8a; /* Fallback for browsers not supporting meta theme-color */
+    background: linear-gradient(270deg, #e0e7ff, #f8fafc, #dbeafe, #f1f5f9);
+    background-size: 400% 400%;
+    animation: gradientBG 18s ease infinite;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+      @keyframes gradientBG {
+        0% {background-position:0% 50%}
+        50% {background-position:100% 50%}
+        100% {background-position:0% 50%}
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+        background: #e0e7ff;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2563eb;
+        border-radius: 8px;
+      }
+      ::selection {
+        background: #2563eb33;
+      }
+      a:focus, button:focus, input:focus {
+        outline: 2px solid #2563eb;
+        outline-offset: 2px;
+      }
+    </style>
   </body>
 </html>
