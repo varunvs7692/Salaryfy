@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in this project, please report it as soon as possible. 
 
-- **Contact:** Please email [your-email@example.com] with details of the vulnerability.
+- **Contact:** Please email [varunvs7692@gmail.com] with details of the vulnerability.
 - **Disclosure:** Do not disclose the vulnerability publicly until it has been reviewed and patched.
 - **Response Time:** We aim to respond to security reports within 72 hours.
 
