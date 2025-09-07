@@ -26,7 +26,9 @@ This is a modern, responsive web application built with React and TailwindCSS. I
 - Professional and clean UI
 
 ## Screenshots
-<!-- Add screenshots of your UI here after development -->
+
+<img width="1908" height="1038" alt="Screenshot 2025-09-07 133143" src="https://github.com/user-attachments/assets/7d40d114-e111-4f8d-b917-0cac8380a3c5" />
+<img width="1919" height="894" alt="Screenshot 2025-09-07 133207" src="https://github.com/user-attachments/assets/f634705b-47cd-43f3-8213-a2e6dcdadb1a" />
 
 ## Deployment
 <!-- Add your deployed site link here after deployment -->
